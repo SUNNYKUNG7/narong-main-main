@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub, faDiscord, faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub, faDiscord, faFacebook, faTwitter , faInstagramSquare , faThreads} from '@fortawesome/free-brands-svg-icons';
 import avatar1 from '../../assets/Profile3.jpg';
 import avatar2 from '../../assets/IMG_0113.jpg';
 import avatar3 from '../../assets/Profile.png';
@@ -85,13 +85,11 @@ function About() {
                 </p> 
 
                 <div className="social-links-container">
-                    <a className="social-links" href="">
-                        <FontAwesomeIcon icon={faLinkedin} className="fa-1x socail-icons" />
-                    </a>
+
                     <a className="social-links" href="https://github.com/SUNNYKUNG7">
                         <FontAwesomeIcon icon={faGithub} className="fa-1x socail-icons" />
                     </a>
-                    <a className="social-links" href="">
+                    <a className="social-links" href="https://discord.com/users/nmk0860">
                         <FontAwesomeIcon icon={faDiscord} className="fa-1x socail-icons" />
                     </a>
                     <a className="social-links" href="https://www.facebook.com/narongdach.bass">
@@ -100,6 +98,14 @@ function About() {
                     <a className="social-links" href="https://x.com/muixx50?s=09">
                         <FontAwesomeIcon icon={faTwitter} className="fa-1x socail-icons" />
                     </a>
+                    <a className="social-links" href="https://www.instagram.com/narong_dachsu/?hl=en">
+                        <FontAwesomeIcon icon={faInstagramSquare} className="fa-1x socail-icons" />
+                    </a>
+                    <a className="social-links" href="https://www.threads.net/@jackeyxl">
+                        <FontAwesomeIcon icon={faThreads} className="fa-1x socail-icons" />
+                    </a>
+
+                    
                 </div>
 
                 {/* First Avatar image with click event */}
