@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap');
+
+
+.description-container {
+    width: 90%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+    background-color: #223c58;
+    filter: drop-shadow(4mm -6mm 4mm rgb(160, 0, 210));
+    position: relative;
+    border-radius: 20px;
+    margin-left: 5%;
+    /* Removed padding-top to align content to the top */
+}
+
+.description-image {
+    width: 100%;
+    max-width: 100%;
+    max-height: 665px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.description-content {
+    padding: 20px 20px 0 20px; /* Adjusted padding to remove top padding */
+    margin-top: 0;
+    flex: 1; /* Let the content expand to fill the available space */
+}
+
+.about-me-text {
+    margin-top: 20px;
+    max-width: 800px;
+    width: 100%;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: #ffffff; /* Text color */
+    padding: 12px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    border-left: 5px solid #44b09e; /* Left border for emphasis */
+}
+
+.about-me-text span.bold-label {
+    font-weight: bold;
+    font-size: 1.1rem; /* Slightly larger font size for labels */
+    color: #44b09e;
+}
+
+.about-me-title {
+    font-family: 'Sarabun', sans-serif;
+    position: relative;
+    display: inline-block;
+    font-size: 2.7rem;
+    background: linear-gradient(315deg, #44b09e 0%, #92c2e2 74%);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: 0;
+    padding: 10px 20px; /* เพิ่ม padding รอบข้อความ */
+    border: 2px solid #44b09e; /* เพิ่มขอบสีเขียว */
+    border-radius: 8px; /* เพิ่มมุมโค้งมน */
+    background-color: rgba(255, 255, 255, 0.1); /* เพิ่มพื้นหลังโปร่งแสง */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* เพิ่มเงาเพื่อเน้น */
+}
+
+.tech-stack {
+    font-family: 'Sarabun', sans-serif;
+    color: #44b09e;
+    font-size: 16px;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .description-container {
+        border-radius: 0px;
+        width: 100%;
+        margin-left: 0;
+    }
+}

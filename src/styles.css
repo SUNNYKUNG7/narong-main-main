@@ -1,0 +1,67 @@
+body {
+  background-color: #141c27;
+  color: #fff;
+}
+
+body::-webkit-scrollbar {
+  width: 15px;
+  
+
+}
+
+body::-webkit-scrollbar-track {
+  background: #141c25;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(#642bff, #ff22e6);
+  border-radius: 10px;
+}
+
+/* สไตล์สำหรับ Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+}
+
+/* ลิงก์ในแถบนำทาง */
+.nav-bar-links {
+  text-decoration: none;
+  padding: 10px 15px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* เส้นแบ่งสีแดงระหว่างลิงก์ */
+.navbar a:not(:last-child) {
+  border-right: 2px solid #ffffff;
+  margin: 0 15px;
+}
+
+/* เปลี่ยนสีลิงก์เมื่อ hover */
+.navbar a:hover {
+  color: #66CDAA;
+}
+
+/* เอฟเฟกต์ไฮไลต์เมื่อถึงเป้าหมาย */
+.highlight-effect {
+  animation: highlight 1s ease-in-out;
+}
+
+/* แอนิเมชันสำหรับเอฟเฟกต์ */
+@keyframes highlight {
+  0% {
+      background-color: #66CDAA;
+  }
+  100% {
+      background-color: transparent;
+  }
+}

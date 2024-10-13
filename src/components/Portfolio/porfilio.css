@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap');
+
+#portfolio {
+    padding-top: 60px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* จัดให้อยู่กึ่งกลางหน้าจอ */
+}
+
+.activity-header-container2 {
+    background-color: #0d2b3f;
+    padding: 20px;
+    border-radius: 30px;
+    max-width: 85%;
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+    margin-bottom: 20px; /* เพิ่มพื้นที่ด้านล่าง */
+}
+
+.portfolio-title {
+    margin-top: 20px;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 3rem;
+    background: linear-gradient(315deg, #b5e3f3 15%, #FFFFFF 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+}
+
+.port-header {
+    margin: 0 auto 20px auto; /* กึ่งกลางทั้งด้านซ้ายและขวา */
+    font-family: 'Sarabun', serif;
+    font-size: 1.6rem;
+    background: linear-gradient(315deg, #5cccf1 15%, #e4fdff 74%);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+}
+
+.proj-title {
+    font-family: 'Sarabun', sans-serif;
+    font-size: 2.2rem;
+    background: linear-gradient(315deg, #44b09e 0%, #92c2e2 74%);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+    margin-bottom: 1rem; /* เพิ่มพื้นที่ด้านล่าง */
+}
+
+.proj-text {
+    font-family: 'Sarabun', sans-serif;
+    max-width: 70%;
+    margin: 0 auto 1rem auto; /* กึ่งกลางทั้งด้านซ้ายและขวา พร้อมเพิ่มพื้นที่ด้านล่าง */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+}
+
+.used-stack {
+    margin-top: 5%;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 1.3rem;
+    background: linear-gradient(315deg, #8544b0 0%, #98cff3 74%);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+    margin-bottom: 1rem; /* เพิ่มพื้นที่ด้านล่าง */
+}
+
+.emoji {
+    color: white;
+}
+
+.rounded-image {
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px; /* จำกัดความกว้างสูงสุดของภาพ */
+    height: auto; /* คงอัตราส่วนของภาพ */
+}
+
+.each-proj {
+    margin-bottom: 5%; /* ลดพื้นที่ว่างระหว่างโปรเจค */
+    padding: 1rem;
+    background-color: #0d2b3f; /* สีพื้นหลังของแต่ละโปรเจค */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+    display: flex;
+    flex-wrap: wrap; /* จัดให้เนื้อหาอยู่ในบรรทัดเดียวกัน */
+    justify-content: center; /* จัดเนื้อหาให้อยู่กึ่งกลาง */
+}
+
+.certification-title,
+.certification-description2 {
+    margin: 0 10px 0 0; /* เพิ่มช่องว่างระหว่างข้อความ */
+    font-family: 'Sarabun', sans-serif;
+    font-size: 1.5rem
+}
+
+.certification-description2 {
+    font-size: 1.5rem !important; /* ปรับขนาดตัวอักษรให้ใหญ่ขึ้น */
+    color: #44b09e !important; /* ใช้สีส้มแดงสดใส */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3) !important; /* เพิ่มเงาเพื่อความโดดเด่น */
+    animation: pulsate 3s infinite alternate; /* ใช้แอนิเมชัน pulsate */
+    transition: all 0.3s ease-in-out; /* เพิ่มการเปลี่ยนแปลงอย่างนุ่มนวล */
+    font-family: 'Sarabun', sans-serif;
+}
+
+/* เอฟเฟกต์เมื่อโฮเวอร์ */
+.certification-description2:hover {
+    color: #d5e846 !important; /* เปลี่ยนสีข้อความเมื่อโฮเวอร์ */
+    transform: scale(1.1); /* ขยายขนาดตัวอักษรเล็กน้อยเมื่อโฮเวอร์ */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* เพิ่มเงาเมื่อโฮเวอร์ */
+}
+
+/* การเพิ่มแอนิเมชันสำหรับข้อความ */
+@keyframes pulsate {
+    0% {
+        transform: scale(1); /* ขนาดปกติ */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* เงาปกติ */
+    }
+    50% {
+        transform: scale(1.1); /* ขยายขนาดเล็กน้อย */
+        text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* เพิ่มเงา */
+    }
+    100% {
+        transform: scale(1); /* กลับไปขนาดปกติ */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* กลับไปเงาปกติ */
+    }
+}
+
+.certification-description2 {
+    animation: glow 2s infinite; /* ใช้แอนิเมชันกับข้อความ */
+}
+
+.d-flex {
+    display: flex; /* ใช้ Flexbox เพื่อจัดให้อยู่ในบรรทัดเดียวกัน */
+    align-items: flex-start; /* จัดให้องค์ประกอบทั้งหมดเริ่มต้นจากด้านบน */
+    gap: 10px; /* เพิ่มช่องว่างระหว่าง h3 และ p */
+    flex-direction: row; /* จัดให้องค์ประกอบอยู่ในแถวเดียวกัน */
+}
+
+.mb-3 {
+    margin-bottom: 1rem; /* เพิ่มช่องว่างด้านล่าง */
+}
+
+@media (max-width: 767px) {
+    .each-proj {
+        flex-direction: column; /* จัดเรียงเป็นคอลัมน์ในหน้าจอขนาดเล็ก */
+        text-align: center; /* จัดให้อยู่ตรงกลางในหน้าจอขนาดเล็ก */
+    }
+    
+    .each-proj img {
+        margin-bottom: 1rem; /* เพิ่มระยะห่างระหว่างภาพกับข้อความในหน้าจอเล็ก */
+    }
+
+    .port-header,
+    .portfolio-title {
+        margin-left: 3%;
+        text-align: center; /* จัดให้อยู่ตรงกลางในหน้าจอขนาดเล็ก */
+    }
+
+    .proj-text {
+        max-width: 90%; /* ขยายขนาดข้อความในหน้าจอขนาดเล็ก */
+    }
+}
+

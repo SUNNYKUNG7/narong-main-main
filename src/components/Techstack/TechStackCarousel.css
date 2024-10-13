@@ -1,0 +1,41 @@
+.tech-stack-carousel-container {
+  margin-bottom: 20px;
+  padding-bottom: 22px;
+  margin-left: 15%;
+}
+
+.tech-stack-heading {
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  background: linear-gradient(315deg, #44b09e 0%, #92c2e2 74%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -ms-background-clip: text;
+  -o-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-right: 16%
+
+}
+
+.tech-stack-icons {
+  color: #44b09e;
+}
+
+.slick-prev,
+.slick-next {
+  display: none !important;
+  /* Hide the navigation arrows */
+}
+
+@media (max-width: 767px) {
+  .tech-stack-carousel-container {
+    margin-left: 0;
+  }
+
+  .tech-stack-heading {
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,218 @@
+.certifications-title-container {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #00d1b2;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 209, 178, 0.5);
+    margin: 40px auto 20px auto; /* Adjusted margin to create space above the heading */
+    text-align: center;
+}
+
+
+/* Updated Certification Title Styling */
+.certifications-title {
+    font-family: 'Kanit', sans-serif;
+    font-size: 3rem; /* Adjust the font size as needed */
+    text-align: center;
+    margin-top: 5%;
+    background: linear-gradient(315deg, #00d1b2 15%, #74c4ac 74%); /* Gradient background for a vibrant look */
+    -webkit-background-clip: text; /* Clips the background to the text */
+    color: transparent; /* Makes the text itself transparent */
+    position: relative;
+    animation: glow 1.5s ease-in-out infinite alternate; /* Adding animation */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: transform 0.3s ease; /* Smooth transform effect */
+}
+
+/* Outline (border) effect */
+.certifications-title::before {
+    content: 'CERTIFICATIONS'; /* Repeat the text for the border effect */
+    font-family: 'Kanit', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 2px #00d1b2; /* Stroke color and width */
+    z-index: -1; /* Ensure it's behind the main text */
+    pointer-events: none; /* Make sure it doesn't interfere with text hover */
+}
+
+/* Blinking Animation */
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* Applying Blinking Animation */
+.certifications-title {
+    animation: blink 1.5s ease-in-out infinite; /* Applying blink animation */
+}
+
+/* Updated Certification Description Styling */
+.certification-description {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.2rem; /* Slightly increase the font size */
+    color: #c4c4c4; /* Good contrast for readability */
+    margin: 15px 0; /* Add space above and below the description */
+    line-height: 1.6; /* Increase line height for better readability */
+    text-align: center; /* Center the description */
+}
+
+/* Other CSS */
+.certifications-title {
+    font-family: 'Kanit', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 5%;
+    background: linear-gradient(315deg, #136485 15%, #74c4ac 74%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.certifications-header {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 5%;
+    background: linear-gradient(315deg, #440370 4%, #d6d0eb 74%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.certification-item {
+    margin-bottom: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.certification-placeholder {
+    text-align: center;
+    padding: 10px;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.certification-placeholder:hover {
+    transform: scale(1.05);
+    border-color: #74c4ac;
+}
+
+.certification-placeholder img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    object-fit: contain;
+}
+
+.placeholder-text {
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.btn {
+    font-family: 'Poppins', sans-serif;
+}
+
+#certifications {
+    padding-top: 60px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 500;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    pointer-events: none;
+}
+
+.overlay h1 {
+    font-size: 3rem;
+    text-align: center;
+    background: linear-gradient(315deg, #440370 4%, #d6d0eb 74%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.overlay p {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 20px;
+    color: #555;
+}
+
+@media (max-width: 767px) {
+    .certification-item:nth-child(odd) {
+        flex-direction: column-reverse;
+    }
+
+    #certifications {
+        padding-top: 60px;
+    }
+
+    .certification-placeholder img {
+        max-width: 100%; /* ให้ภาพเต็มความกว้างในหน้าจอขนาดเล็ก */
+    }
+
+    .certification-item {
+        flex-direction: column; /* จัดเรียงเป็นคอลัมน์ในหน้าจอขนาดเล็ก */
+    }
+}
+
+.modal-dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* ทำให้ Modal กว้างเต็มหน้าจอ */
+    height: 100vh; /* ใช้ความสูงเต็มจอเพื่อให้อยู่กลางแนวตั้ง */
+    margin: 0 auto; /* ทำให้ Modal อยู่กลางหน้าจอ */
+}
+
+.modal-content {
+    background-color: transparent; /* ตั้งค่า background ให้โปร่งใส */
+    border: none; /* ลบเส้นขอบออก */
+    display: flex; /* ใช้ Flexbox เพื่อจัดกึ่งกลาง */
+    justify-content: center; /* จัดกึ่งกลางแนวนอน */
+    align-items: center; /* จัดกึ่งกลางแนวตั้ง */
+}
+
+.modal-body {
+    padding: 0; /* ลบ padding ออกเพื่อให้ภาพขยายเต็ม */
+    display: flex; /* ใช้ Flexbox เพื่อจัดกึ่งกลาง */
+    justify-content: center; /* จัดกึ่งกลางแนวนอน */
+    align-items: center; /* จัดกึ่งกลางแนวตั้ง */
+}
+
+.modal-image {
+    width: auto; /* ใช้ขนาดภาพตามธรรมชาติ */
+    max-width: 180%; /* ให้ภาพขยายตามขนาดของ Modal */
+    max-height: 80vh; /* จำกัดความสูงภาพไม่ให้เกินหน้าจอ */
+    height: auto; /* คงอัตราส่วนของภาพ */
+}
