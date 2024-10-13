@@ -60,7 +60,7 @@ function Header() {
                     to='/certifications'
                     onClick={handleLinkClick}
                     > 
-                        Certificate
+                        #Certificate
                     </HashLink>
                     <HashLink 
                     className="nav-bar-links"
@@ -68,7 +68,7 @@ function Header() {
                     to='/transcript'
                     onClick={handleLinkClick}
                     >
-                        Transcript
+                        #Transcript
                     </HashLink>
                 </Nav>
             </Navbar.Collapse>
