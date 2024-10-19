@@ -32,7 +32,7 @@ const Activity = () => {
                 <Row className='each-proj'>
                 <Col xs={12} md={6} className="d-flex align-items-center justify-content-center">
                         <Carousel>
-                            <Carousel.Item>
+                            <Carousel.Item> 
                                 <img
                                     src={GD1}
                                     alt="Activity Image 1"
