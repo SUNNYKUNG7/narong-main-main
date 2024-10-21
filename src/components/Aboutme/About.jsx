@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub, faDiscord, faFacebook, faTwitter , faInstagramSquare , faThreads} from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub, faFacebook, faTwitter , faInstagramSquare , faThreads} from '@fortawesome/free-brands-svg-icons';
 import avatar1 from '../../assets/Profile3.jpg';
 import avatar2 from '../../assets/IMG_0113.jpg';
 import avatar3 from '../../assets/Profile.png';
@@ -89,9 +89,7 @@ function About() {
                     <a className="social-links" href="https://github.com/SUNNYKUNG7">
                         <FontAwesomeIcon icon={faGithub} className="fa-1x socail-icons" />
                     </a>
-                    <a className="social-links" href="https://discord.com/users/nmk0860">
-                        <FontAwesomeIcon icon={faDiscord} className="fa-1x socail-icons" />
-                    </a>
+
                     <a className="social-links" href="https://www.facebook.com/narongdach.bass">
                         <FontAwesomeIcon icon={faFacebook} className="fa-1x socail-icons" />
                     </a>
